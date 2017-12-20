@@ -177,7 +177,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(row1.key);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.key = input_row.key;&#xD;&#xA;output_row.value = input_row.value;&#xD;&#xA;&#xA;if ( input_row.key.contains(&quot;FileID&quot;))&#xA;System.out.println(&quot;vivek&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tJavaRow_2">
