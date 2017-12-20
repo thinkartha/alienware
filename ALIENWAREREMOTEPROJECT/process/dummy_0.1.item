@@ -178,7 +178,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#xD;&#xA;&#xA;if ( input_row.key.contains(&quot;FileID&quot;))&#xA;{&#x9;&#xA;&#x9;context.fielDs.add(input_row.value);&#xA;&#x9;//System.out.println(input_row.value); &#xA;}&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#xD;&#xA;java.util.List  list=new java.util.ArrayList();&#xA;&#xA;if ( input_row.key.contains(&quot;FileID&quot;))&#xA;{&#x9;&#xA;&#x9;list.add(input_row.value);&#xA;&#x9;//System.out.println(input_row.value); &#xA;}&#xA;globalMap.put(&quot;fielDs&quot;,list)"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tJavaRow_2"/>
