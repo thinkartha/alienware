@@ -10,4 +10,16 @@
 		<nature>org.talend.core.talendnature</nature>
 		<nature>com.oaklandsw.transform.runtime.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Maps/NIF_OUT_EDITED.txt</name>
+			<type>1</type>
+			<location>C:/Users/vivek/Documents/files/NIF_OUT_EDITED.txt</location>
+		</link>
+		<link>
+			<name>Sample Data/NIF_OUT_EDITED.txt</name>
+			<type>1</type>
+			<location>C:/Users/vivek/Documents/files/NIF_OUT_EDITED.txt</location>
+		</link>
+	</linkedResources>
 </projectDescription>
