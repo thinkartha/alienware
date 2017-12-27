@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcontainer:TestContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:testcontainer="http://www.talend.com/testcontainer.ecore" xmi:id="_SqlJcOsyEeelONpmuEfM_Q" defaultContext="Default" originalJobID="_jfpYwKV_EeKlkL1rd_7dsw" parentVersion="0.1">
+  <context xmi:id="_SqlJcesyEeelONpmuEfM_Q" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_SqlJcusyEeelONpmuEfM_Q" comment="" name="username_rest" prompt="username_rest?" promptNeeded="false" repositoryContextId="_l55BsDX8EeW5dtX7d0ubwQ" type="id_String" value="tadmin"/>
+    <contextParameter xmi:id="_SqlJc-syEeelONpmuEfM_Q" comment="" name="password_rest" prompt="password_rest?" promptNeeded="false" repositoryContextId="_l55BsDX8EeW5dtX7d0ubwQ" type="id_Password" value="ZYODzZCOsEc="/>
+    <contextParameter xmi:id="_SqlJdOsyEeelONpmuEfM_Q" comment="" name="input_file1" prompt="input_file1?" promptNeeded="false" type="id_File" value=""/>
+    <contextParameter xmi:id="_SqlJdesyEeelONpmuEfM_Q" comment="" name="reference_file1" prompt="reference_file1?" promptNeeded="false" type="id_File" value=""/>
+    <contextParameter xmi:id="_SqlJdusyEeelONpmuEfM_Q" comment="" name="reference_file2" prompt="reference_file2?" promptNeeded="false" type="id_File" value=""/>
+  </context>
+  <parameters xmi:id="_SqlJd-syEeelONpmuEfM_Q">
+    <elementParameter xmi:id="_SqlJeOsyEeelONpmuEfM_Q" field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
+    <elementParameter xmi:id="_SqlJeesyEeelONpmuEfM_Q" field="TEXT" name="SCREEN_OFFSET_Y" value="256" show="false"/>
+    <elementParameter xmi:id="_SqlJeusyEeelONpmuEfM_Q" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJe-syEeelONpmuEfM_Q" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJfOsyEeelONpmuEfM_Q" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJfesyEeelONpmuEfM_Q" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJfusyEeelONpmuEfM_Q" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJf-syEeelONpmuEfM_Q" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJgOsyEeelONpmuEfM_Q" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJgesyEeelONpmuEfM_Q" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJgusyEeelONpmuEfM_Q" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJg-syEeelONpmuEfM_Q" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJhOsyEeelONpmuEfM_Q" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJhesyEeelONpmuEfM_Q" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJhusyEeelONpmuEfM_Q" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJh-syEeelONpmuEfM_Q" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJiOsyEeelONpmuEfM_Q" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJiesyEeelONpmuEfM_Q" field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJiusyEeelONpmuEfM_Q" field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJi-syEeelONpmuEfM_Q" field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter xmi:id="_SqlJjOsyEeelONpmuEfM_Q" field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter xmi:id="_SqlJjesyEeelONpmuEfM_Q" field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter xmi:id="_SqlJjusyEeelONpmuEfM_Q" field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJj-syEeelONpmuEfM_Q" field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJkOsyEeelONpmuEfM_Q" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;D:/TOS-6.0.0/Talend-Studio-20150905_0332-V6.1.0SNAPSHOT/workspace/in.csv&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJkesyEeelONpmuEfM_Q" field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJkusyEeelONpmuEfM_Q" field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJk-syEeelONpmuEfM_Q" field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+    <elementParameter xmi:id="_SqlJlOsyEeelONpmuEfM_Q" field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJlesyEeelONpmuEfM_Q" field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter xmi:id="_SqlJlusyEeelONpmuEfM_Q" field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJl-syEeelONpmuEfM_Q" field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJmOsyEeelONpmuEfM_Q" field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJmesyEeelONpmuEfM_Q" field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJmusyEeelONpmuEfM_Q" field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJm-syEeelONpmuEfM_Q" field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJnOsyEeelONpmuEfM_Q" field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJnesyEeelONpmuEfM_Q" field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJnusyEeelONpmuEfM_Q" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_SqlJn-syEeelONpmuEfM_Q" field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJoOsyEeelONpmuEfM_Q" field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJoesyEeelONpmuEfM_Q" field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJousyEeelONpmuEfM_Q" field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_SqlJo-syEeelONpmuEfM_Q" field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_SqlJpOsyEeelONpmuEfM_Q" field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJpesyEeelONpmuEfM_Q" field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJpusyEeelONpmuEfM_Q" field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_SqlJp-syEeelONpmuEfM_Q" field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter xmi:id="_SqlJqOsyEeelONpmuEfM_Q" field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_SqlJqesyEeelONpmuEfM_Q" field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_SqlJqusyEeelONpmuEfM_Q" field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_SqlJq-syEeelONpmuEfM_Q" field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJrOsyEeelONpmuEfM_Q" field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJresyEeelONpmuEfM_Q" field="DIRECTORY" name="FILE_PATH" value="&quot;D:/TOS-6.0.0/Talend-Studio-20150905_0332-V6.1.0SNAPSHOT/workspace/.metadata&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJrusyEeelONpmuEfM_Q" field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJr-syEeelONpmuEfM_Q" field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJsOsyEeelONpmuEfM_Q" field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJsesyEeelONpmuEfM_Q" field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_SqlJsusyEeelONpmuEfM_Q" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_SqlJs-syEeelONpmuEfM_Q" field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJtOsyEeelONpmuEfM_Q" field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter xmi:id="_SqlJtesyEeelONpmuEfM_Q" field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter xmi:id="_SqlJtusyEeelONpmuEfM_Q" field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJt-syEeelONpmuEfM_Q" field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter xmi:id="_SqlJuOsyEeelONpmuEfM_Q" field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJuesyEeelONpmuEfM_Q" field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJuusyEeelONpmuEfM_Q" field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJu-syEeelONpmuEfM_Q" field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJvOsyEeelONpmuEfM_Q" field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJvesyEeelONpmuEfM_Q" field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJvusyEeelONpmuEfM_Q" field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJv-syEeelONpmuEfM_Q" field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJwOsyEeelONpmuEfM_Q" field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJwesyEeelONpmuEfM_Q" field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_SqlJwusyEeelONpmuEfM_Q" field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJw-syEeelONpmuEfM_Q" field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJxOsyEeelONpmuEfM_Q" field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJxesyEeelONpmuEfM_Q" field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJxusyEeelONpmuEfM_Q" field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_SqlJx-syEeelONpmuEfM_Q" field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_SqlJyOsyEeelONpmuEfM_Q" field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter xmi:id="_SqlJyesyEeelONpmuEfM_Q" field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJyusyEeelONpmuEfM_Q" field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJy-syEeelONpmuEfM_Q" field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJzOsyEeelONpmuEfM_Q" field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJzesyEeelONpmuEfM_Q" field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJzusyEeelONpmuEfM_Q" field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJz-syEeelONpmuEfM_Q" field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJ0OsyEeelONpmuEfM_Q" field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlJ0esyEeelONpmuEfM_Q" field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJ0usyEeelONpmuEfM_Q" field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_SqlJ0-syEeelONpmuEfM_Q" field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter xmi:id="_SqlJ1OsyEeelONpmuEfM_Q" id="_w6uVgFVDEeWCsc9psPMKXA" name="DQTechnical"/>
+    <routinesParameter xmi:id="_SqlJ1esyEeelONpmuEfM_Q" id="_w6-0MFVDEeWCsc9psPMKXA" name="DataOperation"/>
+    <routinesParameter xmi:id="_SqlJ1usyEeelONpmuEfM_Q" id="_w6VT8FVDEeWCsc9psPMKXA" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_SqlJ1-syEeelONpmuEfM_Q" id="_w6CZAFVDEeWCsc9psPMKXA" name="DataQuality"/>
+    <routinesParameter xmi:id="_SqlJ2OsyEeelONpmuEfM_Q" id="_w6pdAFVDEeWCsc9psPMKXA" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_SqlJ2esyEeelONpmuEfM_Q" id="_w7B3gFVDEeWCsc9psPMKXA" name="Mathematical"/>
+    <routinesParameter xmi:id="_SqlJ2usyEeelONpmuEfM_Q" id="_w7ETwFVDEeWCsc9psPMKXA" name="Numeric"/>
+    <routinesParameter xmi:id="_SqlJ2-syEeelONpmuEfM_Q" id="_w7GwAFVDEeWCsc9psPMKXA" name="Relational"/>
+    <routinesParameter xmi:id="_SqlJ3OsyEeelONpmuEfM_Q" id="_w1FAgFVDEeWCsc9psPMKXA" name="SQLike"/>
+    <routinesParameter xmi:id="_SqlJ3esyEeelONpmuEfM_Q" id="_w7JzUFVDEeWCsc9psPMKXA" name="StringHandling"/>
+    <routinesParameter xmi:id="_SqlJ3usyEeelONpmuEfM_Q" id="_w7MPkFVDEeWCsc9psPMKXA" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_SqlJ3-syEeelONpmuEfM_Q" id="_w7Or0FVDEeWCsc9psPMKXA" name="TalendDate"/>
+    <routinesParameter xmi:id="_SqlJ4OsyEeelONpmuEfM_Q" id="_w7RvIFVDEeWCsc9psPMKXA" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_SqlJ4esyEeelONpmuEfM_Q" componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
+    <elementParameter xmi:id="_SqlJ4usyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter xmi:id="_SqlJ4-syEeelONpmuEfM_Q" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20150909_0336-V6.1.0SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_SqlJ5OsyEeelONpmuEfM_Q" field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter xmi:id="_SqlJ5esyEeelONpmuEfM_Q" field="FILE" name="FILENAME" value="context.input_file1"/>
+    <elementParameter xmi:id="_SqlJ5usyEeelONpmuEfM_Q" field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter xmi:id="_SqlJ5-syEeelONpmuEfM_Q" field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter xmi:id="_SqlJ6OsyEeelONpmuEfM_Q" field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJ6esyEeelONpmuEfM_Q" field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter xmi:id="_SqlJ6usyEeelONpmuEfM_Q" field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJ6-syEeelONpmuEfM_Q" field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJ7OsyEeelONpmuEfM_Q" field="TEXT" name="HEADER" value="0"/>
+    <elementParameter xmi:id="_SqlJ7esyEeelONpmuEfM_Q" field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter xmi:id="_SqlJ7usyEeelONpmuEfM_Q" field="TEXT" name="LIMIT" value=""/>
+    <elementParameter xmi:id="_SqlJ7-syEeelONpmuEfM_Q" field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter xmi:id="_SqlJ8OsyEeelONpmuEfM_Q" field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter xmi:id="_SqlJ8esyEeelONpmuEfM_Q" field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter xmi:id="_SqlJ8usyEeelONpmuEfM_Q" field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/TOS-6.0.0/Talend-Studio-20150905_0332-V6.1.0SNAPSHOT/workspace&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJ8-syEeelONpmuEfM_Q" field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter xmi:id="_SqlJ9OsyEeelONpmuEfM_Q" field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJ9esyEeelONpmuEfM_Q" field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlJ9usyEeelONpmuEfM_Q" field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter xmi:id="_SqlJ9-syEeelONpmuEfM_Q" field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter xmi:id="_SqlJ-OsyEeelONpmuEfM_Q" field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter xmi:id="_SqlJ-esyEeelONpmuEfM_Q" field="TABLE" name="TRIMSELECT">
+      <elementValue xmi:id="_SqlJ-usyEeelONpmuEfM_Q" elementRef="SCHEMA_COLUMN" value="statusCode"/>
+      <elementValue xmi:id="_SqlJ--syEeelONpmuEfM_Q" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_SqlJ_OsyEeelONpmuEfM_Q" elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue xmi:id="_SqlJ_esyEeelONpmuEfM_Q" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_SqlJ_usyEeelONpmuEfM_Q" elementRef="SCHEMA_COLUMN" value="string"/>
+      <elementValue xmi:id="_SqlJ_-syEeelONpmuEfM_Q" elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_SqlKAOsyEeelONpmuEfM_Q" field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter xmi:id="_SqlKAesyEeelONpmuEfM_Q" field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter xmi:id="_SqlKAusyEeelONpmuEfM_Q" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_SqlKA-syEeelONpmuEfM_Q" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_SqlKBOsyEeelONpmuEfM_Q" field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter xmi:id="_SqlKBesyEeelONpmuEfM_Q" field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter xmi:id="_SqlKBusyEeelONpmuEfM_Q" field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue xmi:id="_SqlKB-syEeelONpmuEfM_Q" elementRef="SCHEMA_COLUMN" value="statusCode"/>
+      <elementValue xmi:id="_SqlKCOsyEeelONpmuEfM_Q" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_SqlKCesyEeelONpmuEfM_Q" elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue xmi:id="_SqlKCusyEeelONpmuEfM_Q" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_SqlKC-syEeelONpmuEfM_Q" elementRef="SCHEMA_COLUMN" value="string"/>
+      <elementValue xmi:id="_SqlKDOsyEeelONpmuEfM_Q" elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_SqlKDesyEeelONpmuEfM_Q" field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter xmi:id="_SqlKDusyEeelONpmuEfM_Q" field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter xmi:id="_SqlKD-syEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_SqlKEOsyEeelONpmuEfM_Q" connector="FLOW" name="tFileInputDelimited_1">
+      <column xmi:id="_SqlKEesyEeelONpmuEfM_Q" defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column xmi:id="_SqlKEusyEeelONpmuEfM_Q" defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column xmi:id="_SqlKE-syEeelONpmuEfM_Q" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata xmi:id="_SqlKFOsyEeelONpmuEfM_Q" connector="REJECT" name="REJECT">
+      <column xmi:id="_SqlKFesyEeelONpmuEfM_Q" defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column xmi:id="_SqlKFusyEeelONpmuEfM_Q" defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column xmi:id="_SqlKF-syEeelONpmuEfM_Q" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlKGOsyEeelONpmuEfM_Q" defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlKGesyEeelONpmuEfM_Q" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_SqlKGusyEeelONpmuEfM_Q" componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="0">
+    <elementParameter xmi:id="_SqlKG-syEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter xmi:id="_SqlKHOsyEeelONpmuEfM_Q" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20150909_0336-V6.1.0SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_SqlKHesyEeelONpmuEfM_Q" field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter xmi:id="_SqlKHusyEeelONpmuEfM_Q" field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter xmi:id="_SqlKH-syEeelONpmuEfM_Q" field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tCreateTemporaryFile_1_FILEPATH&quot;))"/>
+    <elementParameter xmi:id="_SqlKIOsyEeelONpmuEfM_Q" field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter xmi:id="_SqlKIesyEeelONpmuEfM_Q" field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter xmi:id="_SqlKIusyEeelONpmuEfM_Q" field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlKI-syEeelONpmuEfM_Q" field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter xmi:id="_SqlKJOsyEeelONpmuEfM_Q" field="CHECK" name="APPEND" value="false"/>
+    <elementParameter xmi:id="_SqlKJesyEeelONpmuEfM_Q" field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter xmi:id="_SqlKJusyEeelONpmuEfM_Q" field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter xmi:id="_SqlKJ-syEeelONpmuEfM_Q" field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter xmi:id="_SqlKKOsyEeelONpmuEfM_Q" field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlKKesyEeelONpmuEfM_Q" field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlKKusyEeelONpmuEfM_Q" field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter xmi:id="_SqlKK-syEeelONpmuEfM_Q" field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlKLOsyEeelONpmuEfM_Q" field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlKLesyEeelONpmuEfM_Q" field="CHECK" name="CREATE" value="true"/>
+    <elementParameter xmi:id="_SqlKLusyEeelONpmuEfM_Q" field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter xmi:id="_SqlKL-syEeelONpmuEfM_Q" field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter xmi:id="_SqlKMOsyEeelONpmuEfM_Q" field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter xmi:id="_SqlKMesyEeelONpmuEfM_Q" field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter xmi:id="_SqlKMusyEeelONpmuEfM_Q" field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter xmi:id="_SqlKM-syEeelONpmuEfM_Q" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_SqlKNOsyEeelONpmuEfM_Q" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_SqlKNesyEeelONpmuEfM_Q" field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter xmi:id="_SqlKNusyEeelONpmuEfM_Q" field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter xmi:id="_SqlKN-syEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_SqlKOOsyEeelONpmuEfM_Q" connector="FLOW" label="out1" name="tFileOutputDelimited_1">
+      <column xmi:id="_SqlKOesyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="statusCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column xmi:id="_SqlKOusyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlKO-syEeelONpmuEfM_Q" comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlKPOsyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="firstName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlKPesyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="lastName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_SqlKPusyEeelONpmuEfM_Q" componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
+    <elementParameter xmi:id="_SqlKP-syEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
+    <elementParameter xmi:id="_SqlKQOsyEeelONpmuEfM_Q" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20150909_0336-V6.1.0SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_SqlKQesyEeelONpmuEfM_Q" field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter xmi:id="_SqlKQusyEeelONpmuEfM_Q" field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter xmi:id="_SqlKQ-syEeelONpmuEfM_Q" field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tCreateTemporaryFile_2_FILEPATH&quot;))"/>
+    <elementParameter xmi:id="_SqlKROsyEeelONpmuEfM_Q" field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter xmi:id="_SqlKResyEeelONpmuEfM_Q" field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter xmi:id="_SqlKRusyEeelONpmuEfM_Q" field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlKR-syEeelONpmuEfM_Q" field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter xmi:id="_SqlKSOsyEeelONpmuEfM_Q" field="CHECK" name="APPEND" value="false"/>
+    <elementParameter xmi:id="_SqlKSesyEeelONpmuEfM_Q" field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter xmi:id="_SqlKSusyEeelONpmuEfM_Q" field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter xmi:id="_SqlKS-syEeelONpmuEfM_Q" field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter xmi:id="_SqlKTOsyEeelONpmuEfM_Q" field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlKTesyEeelONpmuEfM_Q" field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlKTusyEeelONpmuEfM_Q" field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter xmi:id="_SqlKT-syEeelONpmuEfM_Q" field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlKUOsyEeelONpmuEfM_Q" field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlKUesyEeelONpmuEfM_Q" field="CHECK" name="CREATE" value="true"/>
+    <elementParameter xmi:id="_SqlKUusyEeelONpmuEfM_Q" field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter xmi:id="_SqlKU-syEeelONpmuEfM_Q" field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter xmi:id="_SqlKVOsyEeelONpmuEfM_Q" field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter xmi:id="_SqlKVesyEeelONpmuEfM_Q" field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter xmi:id="_SqlKVusyEeelONpmuEfM_Q" field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter xmi:id="_SqlKV-syEeelONpmuEfM_Q" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_SqlKWOsyEeelONpmuEfM_Q" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_SqlKWesyEeelONpmuEfM_Q" field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter xmi:id="_SqlKWusyEeelONpmuEfM_Q" field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter xmi:id="_SqlKW-syEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_SqlKXOsyEeelONpmuEfM_Q" connector="FLOW" label="out2" name="tFileOutputDelimited_2">
+      <column xmi:id="_SqlKXesyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="statusCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column xmi:id="_SqlKXusyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlKX-syEeelONpmuEfM_Q" comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlKYOsyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="firstName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlKYesyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="lastName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_SqlKYusyEeelONpmuEfM_Q" componentName="tCreateTemporaryFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="-160">
+    <elementParameter xmi:id="_SqlKY-syEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tCreateTemporaryFile_1" show="false"/>
+    <elementParameter xmi:id="_SqlKZOsyEeelONpmuEfM_Q" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20150909_0336-V6.1.0SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_SqlKZesyEeelONpmuEfM_Q" field="CHECK" name="REMOVE" value="true"/>
+    <elementParameter xmi:id="_SqlKZusyEeelONpmuEfM_Q" field="CHECK" name="USE_DEFAULT_DIR" value="true"/>
+    <elementParameter xmi:id="_SqlKZ-syEeelONpmuEfM_Q" field="DIRECTORY" name="DIRECTORY" value="&quot;D:/TOS-6.0.0/Talend-Studio-20150905_0332-V6.1.0SNAPSHOT/workspace&quot;" show="false"/>
+    <elementParameter xmi:id="_SqlKaOsyEeelONpmuEfM_Q" field="LABEL" name="INFO_RANGE" value="the temporary file name should include template &quot;XXXX&quot;."/>
+    <elementParameter xmi:id="_SqlKaesyEeelONpmuEfM_Q" field="TEXT" name="TEMPLATE" value="&quot;talend_XXXX&quot;"/>
+    <elementParameter xmi:id="_SqlKausyEeelONpmuEfM_Q" field="TEXT" name="SUFFIX" value="&quot;tmp&quot;"/>
+    <elementParameter xmi:id="_SqlKa-syEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_SqlKbOsyEeelONpmuEfM_Q" componentName="tFileCompare" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="352">
+    <elementParameter xmi:id="_SqlKbesyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tFileCompare_1" show="false"/>
+    <elementParameter xmi:id="_SqlKbusyEeelONpmuEfM_Q" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20150909_0336-V6.1.0SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_SqlKb-syEeelONpmuEfM_Q" field="CLOSED_LIST" name="COMPARISON_MODE" value="TEXT_CMP"/>
+    <elementParameter xmi:id="_SqlKcOsyEeelONpmuEfM_Q" field="FILE" name="FILE" value="((String)globalMap.get(&quot;tCreateTemporaryFile_1_FILEPATH&quot;))"/>
+    <elementParameter xmi:id="_SqlKcesyEeelONpmuEfM_Q" field="FILE" name="FILE_REF" value="context.reference_file1"/>
+    <elementParameter xmi:id="_SqlKcusyEeelONpmuEfM_Q" field="TEXT" name="DIFFER_MESSAGE" value="&quot;[job &quot; + jobName + &quot;] Files differ&quot;"/>
+    <elementParameter xmi:id="_SqlKc-syEeelONpmuEfM_Q" field="TEXT" name="NO_DIFFER_MESSAGE" value="&quot;[job &quot; + jobName + &quot;] Files are identical&quot;"/>
+    <elementParameter xmi:id="_SqlKdOsyEeelONpmuEfM_Q" field="CHECK" name="PRINT" value="true"/>
+    <elementParameter xmi:id="_SqlKdesyEeelONpmuEfM_Q" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_SqlwgOsyEeelONpmuEfM_Q" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_SqlwgesyEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_SqlwgusyEeelONpmuEfM_Q" connector="FLOW" name="tFileCompare_1">
+      <column xmi:id="_Sqlwg-syEeelONpmuEfM_Q" defaultValue="" key="false" length="255" name="file" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlwhOsyEeelONpmuEfM_Q" defaultValue="" key="false" length="255" name="file_ref" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlwhesyEeelONpmuEfM_Q" defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column xmi:id="_SqlwhusyEeelONpmuEfM_Q" defaultValue="" key="false" length="50" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_Sqlwh-syEeelONpmuEfM_Q" defaultValue="" key="false" length="255" name="component" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlwiOsyEeelONpmuEfM_Q" defaultValue="" key="false" length="1" name="differ" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column xmi:id="_SqlwiesyEeelONpmuEfM_Q" defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_SqlwiusyEeelONpmuEfM_Q" componentName="tAssert" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="352">
+    <elementParameter xmi:id="_Sqlwi-syEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tAssert_1" show="false"/>
+    <elementParameter xmi:id="_SqlwjOsyEeelONpmuEfM_Q" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20150909_0336-V6.1.0SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_SqlwjesyEeelONpmuEfM_Q" field="TEXT" name="DESCRIPTION" value="&quot;File from reference differs from input&quot;"/>
+    <elementParameter xmi:id="_SqlwjusyEeelONpmuEfM_Q" field="MEMO_JAVA" name="EXPRESSION" value="((Boolean)globalMap.get(&quot;tFileCompare_1_DIFFERENCE&quot;))"/>
+    <elementParameter xmi:id="_Sqlwj-syEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_SqlwkOsyEeelONpmuEfM_Q" connector="FLOW" name="tAssert_1"/>
+  </node>
+  <node xmi:id="_SqlwkesyEeelONpmuEfM_Q" componentName="tCreateTemporaryFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="-160">
+    <elementParameter xmi:id="_SqlwkusyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tCreateTemporaryFile_2" show="false"/>
+    <elementParameter xmi:id="_Sqlwk-syEeelONpmuEfM_Q" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20150909_0336-V6.1.0SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_SqlwlOsyEeelONpmuEfM_Q" field="CHECK" name="REMOVE" value="true"/>
+    <elementParameter xmi:id="_SqlwlesyEeelONpmuEfM_Q" field="CHECK" name="USE_DEFAULT_DIR" value="true"/>
+    <elementParameter xmi:id="_SqlwlusyEeelONpmuEfM_Q" field="DIRECTORY" name="DIRECTORY" value="&quot;D:/TOS-6.0.0/Talend-Studio-20150905_0332-V6.1.0SNAPSHOT/workspace&quot;" show="false"/>
+    <elementParameter xmi:id="_Sqlwl-syEeelONpmuEfM_Q" field="LABEL" name="INFO_RANGE" value="the temporary file name should include template &quot;XXXX&quot;."/>
+    <elementParameter xmi:id="_SqlwmOsyEeelONpmuEfM_Q" field="TEXT" name="TEMPLATE" value="&quot;talend_XXXX&quot;"/>
+    <elementParameter xmi:id="_SqlwmesyEeelONpmuEfM_Q" field="TEXT" name="SUFFIX" value="&quot;tmp&quot;"/>
+    <elementParameter xmi:id="_SqlwmusyEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_Sqlwm-syEeelONpmuEfM_Q" componentName="tFileCompare" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="512">
+    <elementParameter xmi:id="_SqlwnOsyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tFileCompare_2" show="false"/>
+    <elementParameter xmi:id="_SqlwnesyEeelONpmuEfM_Q" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20150909_0336-V6.1.0SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_SqlwnusyEeelONpmuEfM_Q" field="CLOSED_LIST" name="COMPARISON_MODE" value="TEXT_CMP"/>
+    <elementParameter xmi:id="_Sqlwn-syEeelONpmuEfM_Q" field="FILE" name="FILE" value="((String)globalMap.get(&quot;tCreateTemporaryFile_2_FILEPATH&quot;))"/>
+    <elementParameter xmi:id="_SqlwoOsyEeelONpmuEfM_Q" field="FILE" name="FILE_REF" value="context.reference_file2"/>
+    <elementParameter xmi:id="_SqlwoesyEeelONpmuEfM_Q" field="TEXT" name="DIFFER_MESSAGE" value="&quot;[job &quot; + jobName + &quot;] Files differ&quot;"/>
+    <elementParameter xmi:id="_SqlwousyEeelONpmuEfM_Q" field="TEXT" name="NO_DIFFER_MESSAGE" value="&quot;[job &quot; + jobName + &quot;] Files are identical&quot;"/>
+    <elementParameter xmi:id="_Sqlwo-syEeelONpmuEfM_Q" field="CHECK" name="PRINT" value="true"/>
+    <elementParameter xmi:id="_SqlwpOsyEeelONpmuEfM_Q" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_SqlwpesyEeelONpmuEfM_Q" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_SqlwpusyEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_Sqlwp-syEeelONpmuEfM_Q" connector="FLOW" name="tFileCompare_2">
+      <column xmi:id="_SqlwqOsyEeelONpmuEfM_Q" defaultValue="" key="false" length="255" name="file" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlwqesyEeelONpmuEfM_Q" defaultValue="" key="false" length="255" name="file_ref" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlwqusyEeelONpmuEfM_Q" defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column xmi:id="_Sqlwq-syEeelONpmuEfM_Q" defaultValue="" key="false" length="50" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlwrOsyEeelONpmuEfM_Q" defaultValue="" key="false" length="255" name="component" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlwresyEeelONpmuEfM_Q" defaultValue="" key="false" length="1" name="differ" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column xmi:id="_SqlwrusyEeelONpmuEfM_Q" defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_Sqlwr-syEeelONpmuEfM_Q" componentName="tAssert" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="512">
+    <elementParameter xmi:id="_SqlwsOsyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tAssert_2" show="false"/>
+    <elementParameter xmi:id="_SqlwsesyEeelONpmuEfM_Q" field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend-Studio-20150909_0336-V6.1.0SNAPSHOT\configuration\lib\java" show="false"/>
+    <elementParameter xmi:id="_SqlwsusyEeelONpmuEfM_Q" field="TEXT" name="DESCRIPTION" value="&quot;File from reference differs from input&quot;"/>
+    <elementParameter xmi:id="_Sqlws-syEeelONpmuEfM_Q" field="MEMO_JAVA" name="EXPRESSION" value="((Boolean)globalMap.get(&quot;tFileCompare_2_DIFFERENCE&quot;))"/>
+    <elementParameter xmi:id="_SqlwtOsyEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_SqlwtesyEeelONpmuEfM_Q" connector="FLOW" name="tAssert_2"/>
+  </node>
+  <connection xmi:id="_SqlwtusyEeelONpmuEfM_Q" connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="INPUT_1">
+    <elementParameter xmi:id="_Sqlwt-syEeelONpmuEfM_Q" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_SqlwuOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="statusCode"/>
+      <elementValue xmi:id="_SqlwuesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlwuusyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_Sqlwu-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue xmi:id="_SqlwvOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlwvesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_SqlwvusyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="string"/>
+      <elementValue xmi:id="_Sqlwv-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlwwOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_SqlwwesyEeelONpmuEfM_Q" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_SqlwwusyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection xmi:id="_Sqlww-syEeelONpmuEfM_Q" connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tFileCompare_1">
+    <elementParameter xmi:id="_SqlwxOsyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection xmi:id="_SqlwxesyEeelONpmuEfM_Q" connectorName="FLOW" label="row2" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tReplicate_1">
+    <elementParameter xmi:id="_SqlwxusyEeelONpmuEfM_Q" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_Sqlwx-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="statusCode"/>
+      <elementValue xmi:id="_SqlwyOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlwyesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_SqlwyusyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue xmi:id="_Sqlwy-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlwzOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_SqlwzesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="string"/>
+      <elementValue xmi:id="_SqlwzusyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_Sqlwz-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_Sqlw0OsyEeelONpmuEfM_Q" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_Sqlw0esyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection xmi:id="_Sqlw0usyEeelONpmuEfM_Q" connectorName="FLOW" label="row3" lineStyle="0" metaname="OUTPUT_1" offsetLabelX="0" offsetLabelY="0" source="OUTPUT_1" target="tFileOutputDelimited_1">
+    <elementParameter xmi:id="_Sqlw0-syEeelONpmuEfM_Q" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_Sqlw1OsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="statusCode"/>
+      <elementValue xmi:id="_Sqlw1esyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_Sqlw1usyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_Sqlw1-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue xmi:id="_Sqlw2OsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_Sqlw2esyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_Sqlw2usyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="city"/>
+      <elementValue xmi:id="_Sqlw2-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_Sqlw3OsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_Sqlw3esyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="firstName"/>
+      <elementValue xmi:id="_Sqlw3usyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_Sqlw3-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_Sqlw4OsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="lastName"/>
+      <elementValue xmi:id="_Sqlw4esyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_Sqlw4usyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_Sqlw4-syEeelONpmuEfM_Q" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_Sqlw5OsyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection xmi:id="_Sqlw5esyEeelONpmuEfM_Q" connectorName="FLOW" label="row4" lineStyle="0" metaname="OUTPUT_2" offsetLabelX="0" offsetLabelY="0" source="OUTPUT_2" target="tFileOutputDelimited_2">
+    <elementParameter xmi:id="_Sqlw5usyEeelONpmuEfM_Q" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_Sqlw5-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="statusCode"/>
+      <elementValue xmi:id="_Sqlw6OsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_Sqlw6esyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_Sqlw6usyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue xmi:id="_Sqlw6-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_Sqlw7OsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_Sqlw7esyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="city"/>
+      <elementValue xmi:id="_Sqlw7usyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_Sqlw7-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_Sqlw8OsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="firstName"/>
+      <elementValue xmi:id="_Sqlw8esyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_Sqlw8usyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_Sqlw8-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="lastName"/>
+      <elementValue xmi:id="_Sqlw9OsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_Sqlw9esyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_Sqlw9usyEeelONpmuEfM_Q" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_Sqlw9-syEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection xmi:id="_Sqlw-OsyEeelONpmuEfM_Q" connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tCreateTemporaryFile_1" offsetLabelX="0" offsetLabelY="0" source="tCreateTemporaryFile_1" target="tFileInputDelimited_1">
+    <elementParameter xmi:id="_Sqlw-esyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection xmi:id="_Sqlw-usyEeelONpmuEfM_Q" connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileCompare_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileCompare_1" target="tAssert_1">
+    <elementParameter xmi:id="_Sqlw--syEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection xmi:id="_Sqlw_OsyEeelONpmuEfM_Q" connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileCompare_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileCompare_1" target="tFileCompare_2">
+    <elementParameter xmi:id="_Sqlw_esyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection xmi:id="_Sqlw_usyEeelONpmuEfM_Q" connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tCreateTemporaryFile_2" offsetLabelX="0" offsetLabelY="0" source="tCreateTemporaryFile_2" target="tCreateTemporaryFile_1">
+    <elementParameter xmi:id="_Sqlw_-syEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection xmi:id="_SqlxAOsyEeelONpmuEfM_Q" connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileCompare_2" offsetLabelX="0" offsetLabelY="0" source="tFileCompare_2" target="tAssert_2">
+    <elementParameter xmi:id="_SqlxAesyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
+  <connection xmi:id="_SqlxAusyEeelONpmuEfM_Q" connectorName="FLOW" label="print_all" lineStyle="0" metaname="print_all" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="OUTPUT_1">
+    <elementParameter xmi:id="_SqlxA-syEeelONpmuEfM_Q" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_SqlxBOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="statusCode"/>
+      <elementValue xmi:id="_SqlxBesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlxBusyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_SqlxB-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue xmi:id="_SqlxCOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlxCesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_SqlxCusyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="city"/>
+      <elementValue xmi:id="_SqlxC-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlxDOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_SqlxDesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="firstName"/>
+      <elementValue xmi:id="_SqlxDusyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlxD-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_SqlxEOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="lastName"/>
+      <elementValue xmi:id="_SqlxEesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlxEusyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_SqlxE-syEeelONpmuEfM_Q" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_SqlxFOsyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="print_all" show="false"/>
+  </connection>
+  <connection xmi:id="_SqlxFesyEeelONpmuEfM_Q" connectorName="FLOW" label="print_singleton" lineStyle="0" metaname="print_singleton" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_3" target="OUTPUT_2">
+    <elementParameter xmi:id="_SqlxFusyEeelONpmuEfM_Q" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_SqlxF-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="statusCode"/>
+      <elementValue xmi:id="_SqlxGOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlxGesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_SqlxGusyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue xmi:id="_SqlxG-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlxHOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_SqlxHesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="city"/>
+      <elementValue xmi:id="_SqlxHusyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlxH-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_SqlxIOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="firstName"/>
+      <elementValue xmi:id="_SqlxIesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlxIusyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_SqlxI-syEeelONpmuEfM_Q" elementRef="TRACE_COLUMN" value="lastName"/>
+      <elementValue xmi:id="_SqlxJOsyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_SqlxJesyEeelONpmuEfM_Q" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_SqlxJusyEeelONpmuEfM_Q" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_SqlxJ-syEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="print_singleton" show="false"/>
+  </connection>
+  <subjob xmi:id="_SqlxKOsyEeelONpmuEfM_Q">
+    <elementParameter xmi:id="_SqlxKesyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter xmi:id="_SqlxKusyEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_SqlxK-syEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_SqlxLOsyEeelONpmuEfM_Q">
+    <elementParameter xmi:id="_SqlxLesyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tCreateTemporaryFile_1" show="false"/>
+    <elementParameter xmi:id="_SqlxLusyEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_SqlxL-syEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_SqlxMOsyEeelONpmuEfM_Q">
+    <elementParameter xmi:id="_SqlxMesyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tFileCompare_1" show="false"/>
+    <elementParameter xmi:id="_SqlxMusyEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_SqlxM-syEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_SqlxNOsyEeelONpmuEfM_Q">
+    <elementParameter xmi:id="_SqlxNesyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tAssert_1" show="false"/>
+    <elementParameter xmi:id="_SqlxNusyEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_SqlxN-syEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_SqlxOOsyEeelONpmuEfM_Q">
+    <elementParameter xmi:id="_SqlxOesyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tCreateTemporaryFile_2" show="false"/>
+    <elementParameter xmi:id="_SqlxOusyEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_SqlxO-syEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_SqlxPOsyEeelONpmuEfM_Q">
+    <elementParameter xmi:id="_SqlxPesyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tFileCompare_2" show="false"/>
+    <elementParameter xmi:id="_SqlxPusyEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_SqlxP-syEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_SqlxQOsyEeelONpmuEfM_Q">
+    <elementParameter xmi:id="_SqlxQesyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="tAssert_2" show="false"/>
+    <elementParameter xmi:id="_SqlxQusyEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_SqlxQ-syEeelONpmuEfM_Q" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <testContainerNodes xmi:id="_SqlxROsyEeelONpmuEfM_Q" componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96" input="true">
+    <elementParameter xmi:id="_SqlxResyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+    <elementParameter xmi:id="_SqlxRusyEeelONpmuEfM_Q" field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter xmi:id="_SqlxR-syEeelONpmuEfM_Q" field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlxSOsyEeelONpmuEfM_Q" field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter xmi:id="_SqlxSesyEeelONpmuEfM_Q" field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter xmi:id="_SqlxSusyEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_SqlxS-syEeelONpmuEfM_Q" field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter xmi:id="_SqlxTOsyEeelONpmuEfM_Q" field="MEMO" name="COMMENT" value=""/>
+    <metadata xmi:id="_SqlxTesyEeelONpmuEfM_Q" connector="FLOW" name="INPUT_1">
+      <column xmi:id="_SqlxTusyEeelONpmuEfM_Q" defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column xmi:id="_SqlxT-syEeelONpmuEfM_Q" defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column xmi:id="_SqlxUOsyEeelONpmuEfM_Q" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </testContainerNodes>
+  <testContainerNodes xmi:id="_SqlxUesyEeelONpmuEfM_Q" componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="0">
+    <elementParameter xmi:id="_SqlxUusyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+    <elementParameter xmi:id="_SqlxU-syEeelONpmuEfM_Q" field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlxVOsyEeelONpmuEfM_Q" field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlxVesyEeelONpmuEfM_Q" field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter xmi:id="_SqlxVusyEeelONpmuEfM_Q" field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter xmi:id="_SqlxV-syEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_SqlxWOsyEeelONpmuEfM_Q" field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter xmi:id="_SqlxWesyEeelONpmuEfM_Q" field="MEMO" name="COMMENT" value=""/>
+    <metadata xmi:id="_SqlxWusyEeelONpmuEfM_Q" connector="FLOW" label="out1" name="OUTPUT_1">
+      <column xmi:id="_SqlxW-syEeelONpmuEfM_Q" comment="" key="false" length="-1" name="statusCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column xmi:id="_SqlxXOsyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlxXesyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlxXusyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="firstName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlxX-syEeelONpmuEfM_Q" comment="" key="false" length="-1" name="lastName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </testContainerNodes>
+  <testContainerNodes xmi:id="_SqlxYOsyEeelONpmuEfM_Q" componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
+    <elementParameter xmi:id="_SqlxYesyEeelONpmuEfM_Q" field="TEXT" name="UNIQUE_NAME" value="OUTPUT_2"/>
+    <elementParameter xmi:id="_SqlxYusyEeelONpmuEfM_Q" field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlxY-syEeelONpmuEfM_Q" field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter xmi:id="_SqlxZOsyEeelONpmuEfM_Q" field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter xmi:id="_SqlxZesyEeelONpmuEfM_Q" field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter xmi:id="_SqlxZusyEeelONpmuEfM_Q" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_SqlxZ-syEeelONpmuEfM_Q" field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter xmi:id="_SqlxaOsyEeelONpmuEfM_Q" field="MEMO" name="COMMENT" value=""/>
+    <metadata xmi:id="_SqlxaesyEeelONpmuEfM_Q" connector="FLOW" label="out2" name="OUTPUT_2">
+      <column xmi:id="_SqlxausyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="statusCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column xmi:id="_Sqlxa-syEeelONpmuEfM_Q" comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlxbOsyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlxbesyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="firstName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_SqlxbusyEeelONpmuEfM_Q" comment="" key="false" length="-1" name="lastName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </testContainerNodes>
+  <OriginalNodes xmi:id="_Sqlxb-syEeelONpmuEfM_Q" uniqueName="tXMLMap_1" posX="352" start="true"/>
+  <OriginalNodes xmi:id="_SqlxcOsyEeelONpmuEfM_Q" uniqueName="tReplicate_1" posX="352" posY="96"/>
+  <OriginalNodes xmi:id="_SqlxcesyEeelONpmuEfM_Q" uniqueName="tXMLMap_3" posX="352" posY="192"/>
+  <testInstanceList xmi:id="_SqlxcusyEeelONpmuEfM_Q" name="Customer1" contextInstance="Default" displayName="Customer1" forbidDelete="true" testContainerID="_rDRAwFYxEeWCsc9psPMKXA">
+    <testDatas xmi:id="_Sqlxc-syEeelONpmuEfM_Q" paramemterName="input_file1" value="customer_1_response.txt" name="input_file1"/>
+    <testDatas xmi:id="_SqlxdOsyEeelONpmuEfM_Q" paramemterName="reference_file1" value="empty.txt" name="reference_file1"/>
+    <testDatas xmi:id="_SqlxdesyEeelONpmuEfM_Q" paramemterName="reference_file2" value="customer_1.txt" name="reference_file2"/>
+  </testInstanceList>
+  <testInstanceList xmi:id="_SqlxdusyEeelONpmuEfM_Q" name="Customer2" contextInstance="Default" displayName="Customer2" testContainerID="_rDRAwFYxEeWCsc9psPMKXA">
+    <testDatas xmi:id="_Sqlxd-syEeelONpmuEfM_Q" paramemterName="input_file1" value="customer_2_response.txt" name="input_file1"/>
+    <testDatas xmi:id="_SqlxeOsyEeelONpmuEfM_Q" paramemterName="reference_file1" value="empty.txt" name="reference_file1"/>
+    <testDatas xmi:id="_SqlxeesyEeelONpmuEfM_Q" paramemterName="reference_file2" value="customer_2.txt" name="reference_file2"/>
+  </testInstanceList>
+  <testInstanceList xmi:id="_SqlxeusyEeelONpmuEfM_Q" name="Customer3" contextInstance="Default" displayName="Customer3" testContainerID="_rDRAwFYxEeWCsc9psPMKXA">
+    <testDatas xmi:id="_Sqlxe-syEeelONpmuEfM_Q" paramemterName="input_file1" value="customer_3_response.txt" name="input_file1"/>
+    <testDatas xmi:id="_SqlxfOsyEeelONpmuEfM_Q" paramemterName="reference_file1" value="empty.txt" name="reference_file1"/>
+    <testDatas xmi:id="_SqlxfesyEeelONpmuEfM_Q" paramemterName="reference_file2" value="customer_3.txt" name="reference_file2"/>
+  </testInstanceList>
+  <testInstanceList xmi:id="_SqlxfusyEeelONpmuEfM_Q" name="All" contextInstance="Default" displayName="All" testContainerID="_rDRAwFYxEeWCsc9psPMKXA">
+    <testDatas xmi:id="_Sqlxf-syEeelONpmuEfM_Q" paramemterName="input_file1" value="customer_all_response.txt" name="input_file1"/>
+    <testDatas xmi:id="_SqlxgOsyEeelONpmuEfM_Q" paramemterName="reference_file1" value="customers_all.txt" name="reference_file1"/>
+    <testDatas xmi:id="_SqlxgesyEeelONpmuEfM_Q" paramemterName="reference_file2" value="empty.txt" name="reference_file2"/>
+  </testInstanceList>
+</testcontainer:TestContainer>
