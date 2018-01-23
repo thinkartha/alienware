@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<company>
+    <companyId>1890457</companyId>
+    <websites>
+        <website>http://lrsecurity.com/pany/</website>
+    </websites>
+    <sources>
+        <source>User Generated</source>
+        <source>S&amp;P Capital IQ</source>
+        <source>InsideView</source>
+        <source>Equifax</source>
+    </sources>
+    <britishSics>
+        <britishSicDetails>
+            <britishSic>80100</britishSic>
+            <description>Private security activities</description>
+        </britishSicDetails>
+        <britishSicDetails>
+            <britishSic>80200</britishSic>
+            <description>Security systems service activities</description>
+        </britishSicDetails>
+        <britishSicDetails>
+            <britishSic>80300</britishSic>
+            <description>Investigation activities</description>
+        </britishSicDetails>
+    </britishSics>
+    <city>New Orleans</city>
+    <companyStatus>Operating</companyStatus>
+    <companyTaxId>720945418</companyTaxId>
+    <companyType>Private</companyType>
+    <country>United States</country>
+    <dbe>true</dbe>
+    <disabled>true</disabled>
+    <employees>100</employees>
+    <equifaxId>010453656</equifaxId>
+    <fax>1-504-9441142</fax>
+    <financialYearEnd>0</financialYearEnd>
+    <foundationDate>1979</foundationDate>
+    <industry>Corporate Services</industry>
+    <industryCode>12</industryCode>
+    <mbe>true</mbe>
+    <naics>561611</naics>
+    <naicsDescription>Investigation Services</naicsDescription>
+    <name>L&amp;R Security Services Inc.</name>
+    <phone>+1 504 943 3191</phone>
+    <revenue>6.826</revenue>
+    <revenueCurrency>USD</revenueCurrency>
+    <sic>7381</sic>
+    <sicDescription>Services-Detective, Guard &amp; Armored Car Services</sicDescription>
+    <state>LA</state>
+    <street>3930 Old Gentilly Rd</street>
+    <subIndustry>Detective and Security Services</subIndustry>
+    <subIndustryCode>12_11</subIndustryCode>
+    <subsidiary>false</subsidiary>
+    <vbe>true</vbe>
+    <zip>70126-4859</zip>
+</company>
+</company>
