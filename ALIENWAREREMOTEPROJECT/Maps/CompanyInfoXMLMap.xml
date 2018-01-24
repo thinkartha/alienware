@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/companyInfoXML.xml' outStruct='Structures/companyInfoXML.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='companyInfoXML' outputStructUserName='companyInfoXML' V1='4' name='CompanyInfoXMLMap' incarnation='1456'>
-  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='41' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='company'>
+<root t='190' id='1' V190='11' inStruct='Structures/companyInfoXML.xml' outStruct='Structures/companyInfoXML.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='companyInfoXML' outputStructUserName='companyInfoXML' V1='4' name='CompanyInfoXMLMap' incarnation='1466'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='company'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='companyId'>
       <mapNode t='190' idref='1'/>
@@ -17,9 +17,9 @@
         <mapNode t='190' idref='1'/>
       </child>
     </child>
-    <child t='200' id='10' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='britishSics'>
+    <child t='200' id='10' V200='8' input='true' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='britishSics'>
       <mapNode t='190' idref='1'/>
-      <child t='200' id='11' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='britishSicDetails'>
+      <child t='200' id='11' V200='8' input='true' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='britishSicDetails'>
         <mapNode t='190' idref='1'/>
         <child t='200' id='12' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='britishSic'>
           <mapNode t='190' idref='1'/>
@@ -146,7 +146,7 @@
       <mapNode t='190' idref='1'/>
       <child t='200' id='51' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='britishSicDetails'>
         <mapNode t='190' idref='1'/>
-        <loop>SimpleLoop(in$/company/britishSics/britishSicDetails,{Filter},{Sort Keys},{Contexts})</loop>
+        <loop>SimpleLoop({Input Map Element},{Filter},{Sort Keys},{Contexts})</loop>
         <child t='200' id='52' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='britishSic'>
           <mapNode t='190' idref='1'/>
           <value>in$/company/britishSics/britishSicDetails/britishSic</value>
