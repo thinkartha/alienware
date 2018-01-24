@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -111,4 +113,167 @@
     <routinesParameter id="_6nek0OTmEeejl-kIxdvwPg" name="TalendStringUtil"/>
     <routinesParameter id="_6ml0AOTmEeejl-kIxdvwPg" name="TalendString"/>
   </parameters>
+  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputRaw_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/vivek/Downloads/TDM/TDM/6.1/TDM_Essentials/Instructor_Materials/XML/company.xml&quot;"/>
+    <elementParameter field="RADIO" name="AS_STRING" value="true"/>
+    <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
+    <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputRaw_1">
+      <column defaultValue="" key="false" length="0" name="content" nullable="true" precision="0" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHMap_1" show="false"/>
+    <elementParameter field="LABEL" name="MAPPATH_HELP" value="To create a new map based on the input and output of tHMap, &#xA;use Open Map Editor below. To use an existing map, select the Map Path &#xA;below and then use Open Map Editor."/>
+    <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
+    <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;CompanyInfoXMLMap&quot;"/>
+    <elementParameter field="RADIO" name="SOURCE_AS_MAP" value="false" show="false"/>
+    <elementParameter field="RADIO" name="SOURCE_AS_STRING" value="true"/>
+    <elementParameter field="RADIO" name="AS_MAP" value="false" show="false"/>
+    <elementParameter field="RADIO" name="AS_STRING" value="true"/>
+    <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
+    <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
+    <elementParameter field="RADIO" name="AS_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="SOURCE_TDM_STRUCT_INCARNATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TARGET_TDM_STRUCT_INCARNATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SOURCE_GENERATED_TDM_STRUCT_PATH" value="" show="false"/>
+    <elementParameter field="TEXT" name="TARGET_GENERATED_TDM_STRUCT_PATH" value="" show="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_OBJECTTYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_STRING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_BYTEARRAY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_DOCUMENT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HIDE_INPUT_SET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HIDE_OUTPUT_SET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SHOW_INPUT_STRING" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SHOW_INPUT_MAP" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_STRING" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_MAP" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_DOCUMENT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="IS_NEW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HMAP_VAR_PATH" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="MAP_ROW_BY_ROW" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOG" value="infrequent"/>
+    <elementParameter field="CLOSED_LIST" name="EXCEPTION" value="64"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHMap_1">
+      <column comment="" key="false" length="-1" name="xml_Company" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="out1">
+      <column comment="" defaultValue="" key="false" length="-1" name="companyId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="xml_Company" expression="" type="id_Document" xpath="row2/xml_Company">
+          <children name="company" type="id_String" xpath="row2.xml_Company:/company" loop="true" main="true">
+            <children name="companyId" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.0" xpath="row2.xml_Company:/company/companyId"/>
+            <children name="websites" type="id_String" xpath="row2.xml_Company:/company/websites">
+              <children name="website" type="id_String" xpath="row2.xml_Company:/company/websites/website"/>
+            </children>
+            <children name="sources" type="id_String" xpath="row2.xml_Company:/company/sources">
+              <children name="source" type="id_String" xpath="row2.xml_Company:/company/sources/source"/>
+            </children>
+            <children name="britishSics" type="id_String" xpath="row2.xml_Company:/company/britishSics">
+              <children name="britishSicDetails" type="id_String" xpath="row2.xml_Company:/company/britishSics/britishSicDetails">
+                <children name="britishSic" type="id_Integer" xpath="row2.xml_Company:/company/britishSics/britishSicDetails/britishSic"/>
+                <children name="description" type="id_String" xpath="row2.xml_Company:/company/britishSics/britishSicDetails/description"/>
+              </children>
+            </children>
+            <children name="city" type="id_String" xpath="row2.xml_Company:/company/city"/>
+            <children name="companyStatus" type="id_String" xpath="row2.xml_Company:/company/companyStatus"/>
+            <children name="companyTaxId" type="id_Integer" xpath="row2.xml_Company:/company/companyTaxId"/>
+            <children name="companyType" type="id_String" xpath="row2.xml_Company:/company/companyType"/>
+            <children name="country" type="id_String" xpath="row2.xml_Company:/company/country"/>
+            <children name="dbe" type="id_Boolean" xpath="row2.xml_Company:/company/dbe"/>
+            <children name="disabled" type="id_Boolean" xpath="row2.xml_Company:/company/disabled"/>
+            <children name="employees" type="id_Integer" xpath="row2.xml_Company:/company/employees"/>
+            <children name="equifaxId" type="id_String" xpath="row2.xml_Company:/company/equifaxId"/>
+            <children name="fax" type="id_Date" xpath="row2.xml_Company:/company/fax" pattern="&quot;dd-MM-yyyy&quot;"/>
+            <children name="financialYearEnd" type="id_Integer" xpath="row2.xml_Company:/company/financialYearEnd"/>
+            <children name="foundationDate" type="id_Integer" xpath="row2.xml_Company:/company/foundationDate"/>
+            <children name="industry" type="id_String" xpath="row2.xml_Company:/company/industry"/>
+            <children name="industryCode" type="id_Integer" xpath="row2.xml_Company:/company/industryCode"/>
+            <children name="mbe" type="id_Boolean" xpath="row2.xml_Company:/company/mbe"/>
+            <children name="naics" type="id_Integer" xpath="row2.xml_Company:/company/naics"/>
+            <children name="naicsDescription" type="id_String" xpath="row2.xml_Company:/company/naicsDescription"/>
+            <children name="name" type="id_String" xpath="row2.xml_Company:/company/name"/>
+            <children name="phone" type="id_String" xpath="row2.xml_Company:/company/phone"/>
+            <children name="revenue" type="id_Float" xpath="row2.xml_Company:/company/revenue"/>
+            <children name="revenueCurrency" type="id_String" xpath="row2.xml_Company:/company/revenueCurrency"/>
+            <children name="sic" type="id_Integer" xpath="row2.xml_Company:/company/sic"/>
+            <children name="sicDescription" type="id_String" xpath="row2.xml_Company:/company/sicDescription"/>
+            <children name="state" type="id_String" xpath="row2.xml_Company:/company/state"/>
+            <children name="street" type="id_String" xpath="row2.xml_Company:/company/street"/>
+            <children name="subIndustry" type="id_String" xpath="row2.xml_Company:/company/subIndustry"/>
+            <children name="subIndustryCode" type="id_String" xpath="row2.xml_Company:/company/subIndustryCode"/>
+            <children name="subsidiary" type="id_Boolean" xpath="row2.xml_Company:/company/subsidiary"/>
+            <children name="vbe" type="id_Boolean" xpath="row2.xml_Company:/company/vbe"/>
+            <children name="zip" type="id_String" xpath="row2.xml_Company:/company/zip"/>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="out1">
+        <nodes name="companyId" expression="[row2.xml_Company:/company/companyId]" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="out1/companyId"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="companyId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="tLogRow_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="companyId" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputRaw_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_1" target="tHMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tHMap_1" offsetLabelX="0" offsetLabelY="0" source="tHMap_1" target="tXMLMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="xml_Company"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputRaw_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
 </talendfile:ProcessType>
