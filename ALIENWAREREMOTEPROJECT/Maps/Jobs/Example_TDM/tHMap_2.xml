@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/companyInfoXML.xml' outStruct='Structures/companyInfoXML.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='companyInfoXML' outputStructUserName='companyInfoXML' V1='4' name='tHMap_2' incarnation='459'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='company'>
+    <mapNode t='190' idref='1'/>
+  </inputMapElem>
+  <outputMapElem t='200' id='3' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='company'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/company,{Filter},{Sort Keys},{Contexts})</loop>
+  </outputMapElem>
+  <inputRepRuntime t='692' id='85' V692='1' unnamedElemsNamespace='1' V690='1'>
+    <namespaceContainers t='220' ref='Namespace Containers/company.xml'/>
+  </inputRepRuntime>
+  <outputRepRuntime t='692' idref='85'/>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' idref='85'/>
+  <outputXmlRepRuntime t='692' idref='85'/>
+  <child t='165' id='4' V1='4' name='Document Bindings'>
+    <child t='166' id='5' V166='5' docType='1' docReposPath='/ALIENWAREREMOTEPROJECT/Sample Data/companyInfoXML/company' V1='4' name='in$/company'>
+      <elemNode t='200' idref='2'/>
+    </child>
+    <child t='166' id='6' V166='5' docType='2' docReposPath='/ALIENWAREREMOTEPROJECT/Sample Data/companyInfoXML/company' V1='4' name='out$/company'>
+      <elemNode t='200' idref='3'/>
+    </child>
+  </child>
+  <child t='201' id='7' V1='4' name='Inherits From'>
+  </child>
+</root>
