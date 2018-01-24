@@ -113,7 +113,7 @@
     <routinesParameter id="_6nek0OTmEeejl-kIxdvwPg" name="TalendStringUtil"/>
     <routinesParameter id="_6ml0AOTmEeejl-kIxdvwPg" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="160">
+  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputRaw_1" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/vivek/Downloads/TDM/TDM/6.1/TDM_Essentials/Instructor_Materials/XML/company.xml&quot;"/>
     <elementParameter field="RADIO" name="AS_STRING" value="true"/>
@@ -127,7 +127,7 @@
       <column defaultValue="" key="false" length="0" name="content" nullable="true" precision="0" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
+  <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHMap_1" show="false"/>
     <elementParameter field="LABEL" name="MAPPATH_HELP" value="To create a new map based on the input and output of tHMap, &#xA;use Open Map Editor below. To use an existing map, select the Map Path &#xA;below and then use Open Map Editor."/>
     <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
@@ -164,6 +164,22 @@
       <column comment="" key="false" length="-1" name="xml_Company" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tConvertType_1" show="false"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="false"/>
+    <elementParameter field="TABLE" name="MANUALTABLE"/>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tConvertType_1">
+      <column comment="" key="false" length="-1" name="xml_Company" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="xml_Company" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -177,7 +193,7 @@
       <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <nodes name="xml_Company" expression="" type="id_Document" xpath="row2/xml_Company">
           <children name="company" type="id_String" xpath="row2.xml_Company:/company" loop="true" main="true">
-            <children name="companyId" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.0" xpath="row2.xml_Company:/company/companyId"/>
+            <children name="companyId" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row2.xml_Company:/company/companyId"/>
             <children name="websites" type="id_String" xpath="row2.xml_Company:/company/websites">
               <children name="website" type="id_String" xpath="row2.xml_Company:/company/websites/website"/>
             </children>
@@ -224,10 +240,10 @@
         </nodes>
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="out1">
-        <nodes name="companyId" expression="[row2.xml_Company:/company/companyId]" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="out1/companyId"/>
+        <nodes name="companyId" expression="[row2.xml_Company:/company/companyId]" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="out1/companyId"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="160">
@@ -258,7 +274,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tHMap_1" offsetLabelX="0" offsetLabelY="0" source="tHMap_1" target="tXMLMap_1">
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tHMap_1" offsetLabelX="0" offsetLabelY="0" source="tHMap_1" target="tConvertType_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tXMLMap_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="xml_Company"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
