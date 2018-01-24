@@ -4593,6 +4593,7 @@
       <relatedItems xmi:id="_CP9qPwC0Eei28pE_odnHJA" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_CP9qQAC0Eei28pE_odnHJA" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_CP9qQQC0Eei28pE_odnHJA" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_l-V8wAC1Eei28pE_odnHJA" id="_fr5HQAC1Eei28pE_odnHJA" version="Latest" type="mapper"/>
     </ItemsRelations>
     <migrationTask xmi:id="_5n2T0OTmEeejl-kIxdvwPg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_5n2T0eTmEeejl-kIxdvwPg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
