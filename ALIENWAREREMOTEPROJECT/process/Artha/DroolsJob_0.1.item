@@ -113,39 +113,4 @@
     <routinesParameter id="_6nek0OTmEeejl-kIxdvwPg" name="TalendStringUtil"/>
     <routinesParameter id="_6ml0AOTmEeejl-kIxdvwPg" name="TalendString"/>
   </parameters>
-  <node componentName="tBRMS" componentVersion="0.105" offsetLabelX="0" offsetLabelY="0" posX="192" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBRMS_1" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value=""/>
-    <elementParameter field="CLOSED_LIST" name="CHOOSE_RULE_MODULE" value="LATEST_DEPLOYMENT_FROM_WORKBENCH"/>
-    <elementParameter field="CLOSED_LIST" name="CHOOSE_BRMS_DISTRIBUTION" value="TALEND_BRMS"/>
-    <elementParameter field="TEXT" name="GUVNOR_URL" value="&quot;http://localhost:8080/kie-drools-wb&quot;"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="7s6v49ZcklfgvLhdBCEhjQ=="/>
-    <elementParameter field="TEXT" name="TAC_WEBAPP" value="&quot;http://localhost:8080/org.talend.administrator&quot;"/>
-    <elementParameter field="MODULE_LIST" name="LIBRARY" value=""/>
-    <elementParameter field="TEXT" name="GUVNOR_PACKAGE" value="&quot;org/talend/demo/1.0/demo-1.0.jar&quot;"/>
-    <elementParameter field="TEXT" name="CLASS_NAME" value="&quot;org.talend.demo.ExampleDateObject&quot;"/>
-    <elementParameter field="TEXT" name="RULE_FLOW_ID" value="&quot;&quot;"/>
-    <elementParameter field="TABLE" name="ROOT" show="false"/>
-    <elementParameter field="TABLE" name="GROUP" show="false"/>
-    <elementParameter field="TABLE" name="LOOP" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="TABLE" name="GROUPBYS"/>
-    <elementParameter field="CHECK" name="REMOVE_HEADER" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true" show="false"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tBRMS_1"/>
-    <metadata connector="OUTPUT" name="OUTPUT"/>
-  </node>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBRMS_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
 </talendfile:ProcessType>
