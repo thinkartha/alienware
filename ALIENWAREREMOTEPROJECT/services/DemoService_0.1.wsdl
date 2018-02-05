@@ -13,6 +13,11 @@
 				<xsd:complexType>
 					<xsd:sequence>
 						<xsd:element name="in" type="xsd:string"></xsd:element>
+						<xsd:element name="firstName" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="lastName"
+							type="xsd:string">
+						</xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
@@ -20,6 +25,15 @@
 				<xsd:complexType>
 					<xsd:sequence>
 						<xsd:element name="out" type="xsd:string"></xsd:element>
+						<xsd:element name="street" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="city" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="state" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="zip"
+							type="xsd:int">
+						</xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
