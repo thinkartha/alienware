@@ -141,21 +141,29 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="main" name="main">
       <column comment="" key="false" length="-1" name="payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <nodes name="payload" expression="" type="id_Document" xpath="row1/payload">
-          <children name="tns:DemoServiceOperationRequest" type="id_String" xpath="row1.payload:/tns:DemoServiceOperationRequest">
+          <children name="tns:DemoServiceOperationRequest" expression="" type="id_String" xpath="row1.payload:/tns:DemoServiceOperationRequest">
             <children name="tns" type="id_String" xpath="row1.payload:/tns:DemoServiceOperationRequest/xmlns:tns" nodeType="NAME_SPACE" defaultValue="http://www.talend.org/service/"/>
             <children name="in" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="row1.payload:/tns:DemoServiceOperationRequest/in" loop="true"/>
+            <children name="firstName" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.1" xpath="row1.payload:/tns:DemoServiceOperationRequest/firstName"/>
+            <children name="lastName" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.2" xpath="row1.payload:/tns:DemoServiceOperationRequest/lastName"/>
           </children>
         </nodes>
       </inputTrees>
       <outputTrees name="main">
         <nodes name="payload" expression="[row1.payload:/tns:DemoServiceOperationRequest/in]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="main/payload" pattern=""/>
+        <nodes name="firstName" expression="[row1.payload:/tns:DemoServiceOperationRequest/firstName]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="main/firstName"/>
+        <nodes name="lastName" expression="[row1.payload:/tns:DemoServiceOperationRequest/lastName]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="main/lastName"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2"/>
     </nodeData>
   </node>
   <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="128">
@@ -172,12 +180,18 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="main" name="tFilterRow_6">
       <column comment="" key="false" length="-1" name="payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FILTER" label="main" name="FILTER">
       <column comment="" key="false" length="-1" name="payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="main" name="REJECT">
       <column comment="" key="false" length="-1" name="payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
@@ -199,12 +213,18 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="main" name="tFilterRow_10">
       <column comment="" key="false" length="-1" name="payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FILTER" label="main" name="FILTER">
       <column comment="" key="false" length="-1" name="payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="main" name="REJECT">
       <column comment="" key="false" length="-1" name="payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
@@ -216,10 +236,18 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="response">
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="street" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="state" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row4" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <nodes name="payload" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.1" xpath="row4/payload"/>
+        <nodes name="firstName" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.2" xpath="row4/firstName"/>
+        <nodes name="lastName" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.3" xpath="row4/lastName"/>
       </inputTrees>
       <outputTrees name="response">
         <nodes name="payload" expression="" type="id_Document" xpath="response/payload">
@@ -228,12 +256,20 @@
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="out" expression="Var.Var1 + &quot; world!&quot;" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.0" xpath="response.payload:/tns:DemoServiceOperationResponse/out" loop="true"/>
           </children>
         </nodes>
+        <nodes name="lastName" expression=" row4.firstName" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.2" xpath="response/lastName"/>
+        <nodes name="newColumn" expression=" row4.lastName" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.3" xpath="response/newColumn" pattern=""/>
+        <nodes name="street" expression="&quot;9375 E shea blvd&quot;" type="id_String" xpath="response/street" pattern=""/>
+        <nodes name="city" expression="&quot;scottsdale&quot;" type="id_String" xpath="response/city" pattern=""/>
+        <nodes name="state" expression="&quot;arizona&quot;" type="id_String" xpath="response/state"/>
+        <nodes name="zip" expression="85254" type="id_Integer" xpath="response/zip" pattern=""/>
       </outputTrees>
       <varTables name="Var">
         <nodes name="Var1" expression=" row4.payload" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.0" incomingConnections="//@node.5/@nodeData/@connections.1"/>
       </varTables>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0" target="//@node.5/@nodeData/@varTables.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.2"/>
     </nodeData>
   </node>
   <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="128">
