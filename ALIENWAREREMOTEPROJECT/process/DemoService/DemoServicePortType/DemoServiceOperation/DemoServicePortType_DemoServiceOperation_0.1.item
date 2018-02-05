@@ -236,12 +236,6 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="response">
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="lastName" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="street" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="city" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="state" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row4" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
@@ -251,25 +245,25 @@
       </inputTrees>
       <outputTrees name="response">
         <nodes name="payload" expression="" type="id_Document" xpath="response/payload">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns:DemoServiceOperationResponse" type="id_String" xpath="response.payload:/tns:DemoServiceOperationResponse" main="true">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns:DemoServiceOperationResponse" expression="" type="id_String" xpath="response.payload:/tns:DemoServiceOperationResponse" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns" type="id_String" xpath="response.payload:/tns:DemoServiceOperationResponse/xmlns:tns" nodeType="NAME_SPACE" defaultValue="http://www.talend.org/service/"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="out" expression="Var.Var1 + &quot; world!&quot;" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.0" xpath="response.payload:/tns:DemoServiceOperationResponse/out" loop="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="firstName" expression="row4.firstName" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.2" xpath="response.payload:/tns:DemoServiceOperationResponse/firstName"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="lastName" expression="row4.lastName" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.3" xpath="response.payload:/tns:DemoServiceOperationResponse/lastName"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="street" expression="&quot;9375 E shea blvd&quot;" type="id_String" xpath="response.payload:/tns:DemoServiceOperationResponse/street"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="city" expression="&quot;scottsdale&quot;" type="id_String" xpath="response.payload:/tns:DemoServiceOperationResponse/city"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="state" expression="&quot;AZ&quot;" type="id_String" xpath="response.payload:/tns:DemoServiceOperationResponse/state"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="zip" expression="&quot;85254&quot;" type="id_String" xpath="response.payload:/tns:DemoServiceOperationResponse/zip"/>
           </children>
         </nodes>
-        <nodes name="lastName" expression=" row4.firstName" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.2" xpath="response/lastName"/>
-        <nodes name="newColumn" expression=" row4.lastName" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.3" xpath="response/newColumn" pattern=""/>
-        <nodes name="street" expression="&quot;9375 E shea blvd&quot;" type="id_String" xpath="response/street" pattern=""/>
-        <nodes name="city" expression="&quot;scottsdale&quot;" type="id_String" xpath="response/city" pattern=""/>
-        <nodes name="state" expression="&quot;arizona&quot;" type="id_String" xpath="response/state"/>
-        <nodes name="zip" expression="85254" type="id_Integer" xpath="response/zip" pattern=""/>
       </outputTrees>
       <varTables name="Var">
         <nodes name="Var1" expression=" row4.payload" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.0" incomingConnections="//@node.5/@nodeData/@connections.1"/>
       </varTables>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@varTables.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0" target="//@node.5/@nodeData/@varTables.0/@nodes.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
     </nodeData>
   </node>
   <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="128">

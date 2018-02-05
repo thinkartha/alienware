@@ -37,7 +37,7 @@
 						</xsd:element>
 						<xsd:element name="state" type="xsd:string">
 						</xsd:element>
-						<xsd:element name="zip" type="xsd:int">
+						<xsd:element name="zip" type="xsd:string">
 						</xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
