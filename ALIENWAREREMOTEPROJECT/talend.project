@@ -3350,6 +3350,9 @@
       <relatedItems xmi:id="_Sw07fOsyEeelONpmuEfM_Q" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Sw07fesyEeelONpmuEfM_Q" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Sw07fusyEeelONpmuEfM_Q" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_v4aeAAodEeiQX5XsGOA2TQ" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_v4bFEAodEeiQX5XsGOA2TQ" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_v4bFEQodEeiQX5XsGOA2TQ" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_Sw07f-syEeelONpmuEfM_Q">
       <baseItem xmi:id="_Sw07gOsyEeelONpmuEfM_Q" id="_iK1OABBREeGFz_xdEv1J-Q" version="0.1" type="job"/>
