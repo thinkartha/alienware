@@ -4616,6 +4616,59 @@
       <relatedItems xmi:id="_ct5QMAbLEeiQX5XsGOA2TQ" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ct5QMQbLEeiQX5XsGOA2TQ" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_yCU9IA0YEeiQX5XsGOA2TQ">
+      <baseItem xmi:id="_yCU9IQ0YEeiQX5XsGOA2TQ" id="_F70WQFXhEeeOrN6KqoE7uw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_yCU9Ig0YEeiQX5XsGOA2TQ" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Iw0YEeiQX5XsGOA2TQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9JA0YEeiQX5XsGOA2TQ" id="DimDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9JQ0YEeiQX5XsGOA2TQ" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Jg0YEeiQX5XsGOA2TQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Jw0YEeiQX5XsGOA2TQ" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9KA0YEeiQX5XsGOA2TQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9KQ0YEeiQX5XsGOA2TQ" id="FM_Routine" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Kg0YEeiQX5XsGOA2TQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Kw0YEeiQX5XsGOA2TQ" id="ApexRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9LA0YEeiQX5XsGOA2TQ" id="CloudBedsRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9LQ0YEeiQX5XsGOA2TQ" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Lg0YEeiQX5XsGOA2TQ" id="Encode" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Lw0YEeiQX5XsGOA2TQ" id="lookup" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9MA0YEeiQX5XsGOA2TQ" id="CleansedRule" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9MQ0YEeiQX5XsGOA2TQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Mg0YEeiQX5XsGOA2TQ" id="ConvertDecimalCol" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Mw0YEeiQX5XsGOA2TQ" id="CustomRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9NA0YEeiQX5XsGOA2TQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9NQ0YEeiQX5XsGOA2TQ" id="GoogleAPIService" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Ng0YEeiQX5XsGOA2TQ" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Nw0YEeiQX5XsGOA2TQ" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9OA0YEeiQX5XsGOA2TQ" id="MD5" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9OQ0YEeiQX5XsGOA2TQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Og0YEeiQX5XsGOA2TQ" id="EcapeQuotesinString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9Ow0YEeiQX5XsGOA2TQ" id="JerseyClientCommunicator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9PA0YEeiQX5XsGOA2TQ" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCU9PQ0YEeiQX5XsGOA2TQ" id="MDM" version="Latest" type="routine"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_yCYAcA0YEeiQX5XsGOA2TQ">
+      <baseItem xmi:id="_yCYAcQ0YEeiQX5XsGOA2TQ" id="_Y3aDMHGQEeeyDYjWHVZdsg" version="0.1" type="job"/>
+      <relatedItems xmi:id="_yCYAcg0YEeiQX5XsGOA2TQ" id="_F70WQFXhEeeOrN6KqoE7uw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_yCYAcw0YEeiQX5XsGOA2TQ" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAdA0YEeiQX5XsGOA2TQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAdQ0YEeiQX5XsGOA2TQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAdg0YEeiQX5XsGOA2TQ" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAdw0YEeiQX5XsGOA2TQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAeA0YEeiQX5XsGOA2TQ" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAeQ0YEeiQX5XsGOA2TQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAeg0YEeiQX5XsGOA2TQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAew0YEeiQX5XsGOA2TQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAfA0YEeiQX5XsGOA2TQ" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAfQ0YEeiQX5XsGOA2TQ" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAfg0YEeiQX5XsGOA2TQ" id="MyRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAfw0YEeiQX5XsGOA2TQ" id="TimeRoutine_RDL" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAgA0YEeiQX5XsGOA2TQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAgQ0YEeiQX5XsGOA2TQ" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAgg0YEeiQX5XsGOA2TQ" id="KeyManagementForSqoop" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAgw0YEeiQX5XsGOA2TQ" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yCYAhA0YEeiQX5XsGOA2TQ" id="MDM" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_5n2T0OTmEeejl-kIxdvwPg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_5n2T0eTmEeejl-kIxdvwPg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_5n2T0uTmEeejl-kIxdvwPg" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
