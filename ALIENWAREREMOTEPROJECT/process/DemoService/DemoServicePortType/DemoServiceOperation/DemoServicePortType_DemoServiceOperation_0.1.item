@@ -243,7 +243,7 @@
         <nodes name="firstName" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.2" xpath="row4/firstName"/>
         <nodes name="lastName" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.3" xpath="row4/lastName"/>
       </inputTrees>
-      <inputTrees name="row6" lookup="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+      <inputTrees activateCondensedTool="true" name="row6" lookup="true" matchingMode="ALL_ROWS" lookupMode="RELOAD" activateGlobalMap="true">
         <nodes name="city" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.4" xpath="row6/city"/>
         <nodes name="state" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.7" xpath="row6/state"/>
         <nodes name="street" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.6" xpath="row6/street"/>
